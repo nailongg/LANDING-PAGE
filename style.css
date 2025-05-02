@@ -1,0 +1,149 @@
+/* ==== GLOBAL STYLE ==== */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(90deg, #351c4d, #765285, #ff7e5f, #feb47b, #f5ab99);
+    color: white;
+    overflow-x: hidden;
+    overflow-y: auto ;
+}
+
+/* ==== HEADER & NAVIGATION ==== */
+header {
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+    margin-right: 20px;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+li a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* ==== MAIN SECTION ==== */
+main {
+    text-align: left; /* Fix teks biar rata kiri */
+    padding: 50px;
+}
+
+.container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column; /* Tambahan agar isi tersusun vertikal */
+}
+
+/* ==== TYPOGRAPHY ==== */
+h1 {
+    font-size: 2.5em;
+    color: #fff;
+    margin: 0;
+}
+
+h2 {
+    font-size: 36px;
+    margin: 10px 0;
+    display: inline-block;
+    border-left: 4px solid white;
+    padding-left: 10px;
+}
+
+p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: auto;
+}
+
+/* ==== CHANGING TEXT ==== */
+#changing-text {
+    transition: all 0.5s;
+    color: #000000;
+    display: inline-block;
+    border-right: 2px solid black;
+    animation: blink 0.7s infinite;
+}
+
+/* ==== ANIMATIONS ==== */
+@keyframes blink {
+    0%, 100% { border-color: transparent; }
+    50% { border-color: black; }
+}
+
+/* ==== FOTTER ==== */
+.footer {
+    background-color: #ffffff;
+    border-top: 1px solid #ddd;
+    padding: 40px 20px;
+    color: #333;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: auto;
+  }
+  
+  .footer-left, .footer-middle, .footer-right {
+    flex: 1 1 300px;
+    margin: 10px;
+  }
+  
+  .footer .logo {
+    height: 50px;
+    margin-bottom: 10px;
+  }
+  
+  .social-icons a {
+    display: inline-block;
+    margin: 5px;
+    font-size: 22px;
+    color: #333;
+    background-color: #f4f6f8;
+    padding: 10px;
+    border-radius: 50%;
+    transition: background 0.3s;
+  }
+  
+  .social-icons a:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .footer-right a {
+    display: block;
+    color: #1a237e;
+    text-decoration: none;
+    margin-bottom: 8px;
+  }
+  
+  .footer-right a:hover {
+    text-decoration: underline;
+  }
+  
