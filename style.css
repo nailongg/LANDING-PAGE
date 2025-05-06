@@ -22,7 +22,7 @@ nav {
 }
 
 .logo {
-    height: 50px;
+    height: 100px;
     width: auto;
     object-fit: contain;
     margin-right: 20px;
@@ -117,8 +117,10 @@ p {
   }
   
   .footer .logo {
-    height: 50px;
-    margin-bottom: 10px;
+    height: 200px;
+    width: auto;
+    object-fit: contain;
+    margin-top: 00;
   }
   
   .social-icons a {
