@@ -1,15 +1,15 @@
-/* ==== GLOBAL STYLE ==== */
+/*____GLOBAL STYLE____*/
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(90deg, #351c4d, #765285, #ff7e5f, #feb47b, #f5ab99);
+    background: linear-gradient(135deg, #00f2ff, #ff00c8);
     color: white;
     overflow-x: hidden;
     overflow-y: auto ;
 }
 
-/* ==== HEADER & NAVIGATION ==== */
+/*____HEADER & NAVIGATION____*/
 header {
     padding: 20px;
 }
@@ -45,20 +45,52 @@ li a {
     font-size: 18px;
 }
 
-/* ==== MAIN SECTION ==== */
+/*____MAIN SECTION____*/
 main {
-    text-align: left; /* Fix teks biar rata kiri */
+    text-align: auto; 
     padding: 50px;
 }
 
-.container {
+.container1 {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
     margin-top: 50px;
+    font-size: 20px; 
     display: flex;
     justify-content: flex-start;
     flex-direction: column; /* Tambahan agar isi tersusun vertikal */
 }
 
-/* ==== TYPOGRAPHY ==== */
+
+.container2 {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.subtitle {
+  font-family: 'Arial', sans-serif;
+  font-size: 20px;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-family: 'Arial', sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  color: #fff;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/*____TYPOGRAPHY____*/
 h1 {
     font-size: 2.5em;
     color: #fff;
@@ -79,26 +111,109 @@ p {
     margin: auto;
 }
 
-/* ==== CHANGING TEXT ==== */
+/*____PERGANTIAN TEXT____*/
 #changing-text {
     transition: all 0.5s;
     color: #000000;
+    font-size: 50px;
     display: inline-block;
     border-right: 2px solid black;
     animation: blink 0.7s infinite;
+    font-family: 'bungee', cursive;
+    font-weight: bold;
 }
 
-/* ==== ANIMATIONS ==== */
+/*____ANIMASI____*/
 @keyframes blink {
     0%, 100% { border-color: transparent; }
     50% { border-color: black; }
 }
 
-/* ==== FOTTER ==== */
+/* LAYANAN UNGGULAN */
+.features {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.feature-card {
+  background-color: #edeffd;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  text-align: center;
+  max-width: 250px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease-in-out;
+}
+
+.feature-card:hover {
+  box-shadow: 0 0 25px rgba(160, 0, 255, 0.5), 0 0 35px rgba(0, 255, 255, 0.4);
+  transform: translateY(-10px);
+  background-color: #f4f2ff;
+  }
+
+.feature-card h3 {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: #222;
+}
+
+.feature-card p {
+  color: #444;
+  font-size: 0.95rem;
+  margin-top: 0.5rem;
+}
+
+.icon {
+  width: 60px;
+height: 60px;
+margin: 0 auto;
+border-radius: 15px;
+background: linear-gradient(135deg, #00f2ff, #ff00c8);
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 2rem;
+color: white;
+transition: all 0.3s ease-in-out;
+box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+}
+
+.lock::before {
+  content: "🔒";
+  font-size: 2rem;
+  display: block;
+  line-height: 60px;
+}
+
+.app::before {
+  content: "🖥️";
+  font-size: 2rem;
+  display: block;
+  line-height: 60px;
+}
+
+.chart::before {
+  content: "📈";
+  font-size: 2rem;
+  display: block;
+  line-height: 60px;
+}
+
+.video::before {
+  content: "▶️";
+  font-size: 2rem;
+  display: block;
+  line-height: 60px;
+}
+
+/*____FOTTER____*/
 .footer {
     background-color: #ffffff;
     border-top: 1px solid #ddd;
-    padding: 40px 20px;
+    padding: 20px 20px;
     color: #333;
     font-family: Arial, sans-serif;
   }
@@ -120,7 +235,16 @@ p {
     height: 200px;
     width: auto;
     object-fit: contain;
-    margin-top: 00;
+    margin-top: 0;
+    position: relative;
+    top : -30px;
+  }
+
+  .footer p {
+    margin: 0;
+    font-size: 20px;
+    color: #666;
+    top: 2200px;
   }
   
   .social-icons a {
@@ -129,13 +253,15 @@ p {
     font-size: 22px;
     color: #333;
     background-color: #f4f6f8;
-    padding: 10px;
-    border-radius: 50%;
-    transition: background 0.3s;
+    padding: 12px;
+    border-radius: 80%;
+    transform: all 0.4s ease;
   }
   
   .social-icons a:hover {
-    background-color: #e0e0e0;
+    background: linear-gradient(135deg, #00f2ff, #ff00c8);
+    color: #fff;
+    transform: scale(1.1);
   }
   
   .footer-right a {
